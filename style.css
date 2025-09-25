@@ -1,0 +1,169 @@
+/*UNIVERSAL*/
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    margin:0px;
+    padding:0px;
+    background-color:hsla(0,0%,93%,1);
+background-image:
+radial-gradient(at 0% 0%, hsla(274,13%,63%,1) 0px, transparent 50%),
+radial-gradient(at 79% 15%, hsla(266,18%,54%,1) 0px, transparent 50%),
+radial-gradient(at 47% 68%, hsla(256,15%,42%,0.64) 0px, transparent 50%),
+radial-gradient(at 83% 36%, hsla(337,6%,85%,1) 0px, transparent 50%),
+radial-gradient(at 78% 69%, hsla(0,0%,26%,0.68) 0px, transparent 50%),
+radial-gradient(at 0% 100%, hsla(355,0%,38%,1) 0px, transparent 50%);
+background-position: center;
+background-repeat: no-repeat;
+background-size:cover;
+}
+
+ul{
+    text-decoration:none;
+    list-style-type:none;
+}
+
+nav{
+    display:block;
+    margin:20px auto;
+    z-index:5;
+    position:fixed;
+    justify-content: space-around;
+    width: 90vw;
+    height:auto;
+    padding: 5px 10px;
+
+    /* Glassmorphism Core Properties */
+    background: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px); /* Safari support */
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); 
+
+    transition: 0.3s; 
+}
+.navbar{
+   width:90vw;
+   margin:20px auto;
+}
+.navItems{
+    display:flex;
+    flex-direction: row-reverse;
+    float:right;
+}
+#leftNavItem{
+    float:left;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+/*HERO SECTION*/
+.heroContainer{
+    width:100vw;
+    height:auto;
+    margin-top:-20px;
+    z-index:1;
+}
+
+video{
+    width:100vw;
+}
+
+
+/*BUTTON TAGS*/
+.filter{
+    padding:4px 6px;
+    margin:5px;
+    font-size: small;
+    border-radius:11px;
+    color:white;
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); 
+}
+.buttonContainer{
+    display:flex;
+    justify-content: center;
+}
+
+#webButton{
+    background-color:#a970ba;
+}
+#smButton{
+    background-color:#b24eb9;
+}
+#brandButton{
+    background-color:#934683;
+}
+#edButton{
+    background-color:#65334D;
+}
+#vecButton{
+    background-color:#492231;
+}
+
+
+/*WORK GRID*/
+.gridContainer{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    gap:1em;
+    margin:1em;
+}
+.gridCol{
+    display:flex;
+    flex-direction:column;
+    gap:1em;
+}
+.workImgs{
+    object-fit:cover;
+    max-width:100%;
+    max-height:100%; 
+    border-radius:8px;
+}
+
+/*FOOTER*/
+footer{
+    background-color:#3A363C;
+    height:auto;
+    margin:0;
+    padding:1em;
+}
+.footerText{
+    color:white;
+    font-size:small;
+    text-align: right;
+}
+.contactButton{
+    padding:4px 6px;
+    margin:5px;
+    font-size: small;
+    border-radius:11px;
+    color:white;
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); 
+    background-color:hsl(281, 33%, 20%);
+}
+.footerContainer{
+    display:block;
+}
+.footerRight{
+    float:right;
+    display:flex;
+}
+footer button{
+    float:left;
+}
