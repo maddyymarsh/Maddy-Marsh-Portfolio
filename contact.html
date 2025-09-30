@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Maddy Marsh</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://use.typekit.net/bwh0trl.css">
+
+</head>
+
+<body>
+ <div class="navbar">
+    <nav aria-label="Primary Navigation">
+        <ul>
+            <li class="navItems" id="leftNavItem"><a id="maddyMarsh" href="index.html"> Maddy Marsh</a></li>
+            <li class="navItems"><button class="contactButton "><a href="contact.html">Contact</a></button></li>
+            <li class="navItems"><a href="about.html">About</a></li>
+            <li class="navItems"><a href="index.html#work"> Work</a></li>
+        </ul>
+    </nav>
+    </div>
+
+<div id="contactPage">
+    
+    <section aria-label="contact infortmation">
+            <h1>Interested in Working Together?</h1>
+
+         <form action="https://api.web3forms.com/submit" method="POST" title="Contact Form">
+            <h2>Contact Me Directly</h2>
+
+            <div class="contactFormName">
+                <label for="name" id="name"> Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+
+            <br>
+
+            <div class="contactFormEmail">
+                <label for="email" id="email" >Email:</label>
+                <input type="email" id="email" name="email" placeholder="example@email.com" required>
+            </div>
+
+            <br>
+
+            <div class="contactFormMessage">
+                <label for="message" id="message" required> Message:</label>
+                <textarea id="message" name="message" placeholder="Type your message here!" required></textarea>
+            </div>
+
+            <br>
+            <div class="contactFormSubmit">
+                <button type="submit" id="submit"> Submit</button>
+                <input type="hidden" name="apikey" value="6e93bba1-fc6c-4f3a-a204-f4b83da1afea">
+            </div>
+
+         </form>
+
+    </section>
+        <section aria-label="footer">
+        <footer>
+            <div class="footerContainer">
+             <button class="contactButton"><a href="contact.html">Contact</a></button>
+             <div classs="footerRight">
+                 <ul class="footerText">
+                    <li>See My Code</li>
+                    <li>&copy; Maddy Marsh 2025</li>
+                 </ul>
+             </div>
+            </div>
+        </footer>
+    </section>
+ </div>
+</body>

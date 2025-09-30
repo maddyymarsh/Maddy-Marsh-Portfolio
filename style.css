@@ -23,7 +23,32 @@ ul{
     text-decoration:none;
     list-style-type:none;
 }
+a{
+    text-decoration: none;
+}
+a:visited{
+    color:white;
+}
+h1{
+    color:white;
+    text-align:center;
+     font-family: "oswald", sans-serif;
+font-weight: 500;
+font-style: normal;
+letter-spacing:0px;
+font-size:2em;
+}
+h2{
+    color:white;
+    text-align:center;
+     font-family: "oswald", sans-serif;
+font-weight: 500;
+font-style: normal;
+letter-spacing:0px;
+font-size:1.5em;
+}
 
+/* NAV */
 nav{
     display:block;
     margin:20px auto;
@@ -52,9 +77,18 @@ nav{
     display:flex;
     flex-direction: row-reverse;
     float:right;
+    font-family: "oswald", sans-serif;
+font-weight: 400;
+font-style: normal;
+letter-spacing: 1px;
 }
 #leftNavItem{
     float:left;
+    font-weight:500;
+    letter-spacing: 0.5px;
+}
+#maddyMarsh{
+    font-size:1.1em;
 }
 
 nav a {
@@ -73,25 +107,34 @@ nav a:hover {
 /*HERO SECTION*/
 .heroContainer{
     width:100vw;
-    height:auto;
-    margin-top:-20px;
+    height:100vh;
     z-index:1;
 }
 
-video{
-    width:100vw;
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
 }
+
 
 
 /*BUTTON TAGS*/
 .filter{
-    padding:4px 6px;
+    padding:4px 10px;
     margin:5px;
     font-size: small;
     border-radius:11px;
     color:white;
     border: 1px solid rgba(255, 255, 255, 0.3); 
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); 
+     font-family: "oswald", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 .buttonContainer{
     display:flex;
@@ -99,13 +142,13 @@ video{
 }
 
 #webButton{
-    background-color:#a970ba;
+    background-color:#9863b7;
 }
 #smButton{
-    background-color:#b24eb9;
+    background-color:#864394;
 }
 #brandButton{
-    background-color:#934683;
+    background-color:#7f3b76;
 }
 #edButton{
     background-color:#65334D;
@@ -140,22 +183,31 @@ footer{
     background-color:#3A363C;
     height:auto;
     margin:0;
-    padding:1em;
+    padding:1em 1.5em;
 }
 .footerText{
     color:white;
     font-size:small;
     text-align: right;
+    font-family: "oswald", sans-serif;
+font-weight: 400;
+font-style: normal;
+letter-spacing: 1px;
+
 }
 .contactButton{
     padding:4px 6px;
-    margin:5px;
-    font-size: small;
+    margin-top:5px;
+    font-size: medium;
     border-radius:11px;
     color:white;
     border: 1px solid rgba(255, 255, 255, 0.3); 
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); 
     background-color:hsl(281, 33%, 20%);
+    font-family: "oswald", sans-serif;
+font-weight: 500;
+font-style: normal;
+letter-spacing: 1px;
 }
 .footerContainer{
     display:block;
@@ -167,3 +219,84 @@ footer{
 footer button{
     float:left;
 }
+
+/*CONTACT PAGE*/
+#contactPage{
+   padding-top:8em;
+}
+
+/* CONTACT FORM*/
+form{
+    background: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px); /* Safari support */
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); 
+    width:fit-content;
+    height:fit-content;
+    padding:1em;
+    margin:1em;
+}
+
+.contactFormName{
+    margin-top:0.5em;
+}
+
+input{
+    border-radius:5px;
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+}
+#name{
+    color:white;
+    font-family: "oswald", sans-serif;
+font-weight: 400;
+font-style: normal;
+letter-spacing:0px;
+
+}
+
+#email{
+     color:white;
+    font-family: "oswald", sans-serif;
+font-weight: 400;
+font-style: normal;
+letter-spacing:0px;
+}
+
+#message{
+     color:white;
+    font-family: "oswald", sans-serif;
+font-weight: 400;
+font-style: normal;
+letter-spacing:0px;
+margin-right:2px;
+}
+.contactFormMessage{
+    display:flex;
+    align-items:center;
+}
+textarea{
+    border-radius: 6px;
+     border: 1px solid rgba(255, 255, 255, 0.3); 
+}
+#submit{
+    color:white;
+    font-family: "oswald", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing:0px;
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); 
+    background-color:hsl(281, 33%, 20%);
+    border-radius: 8px;
+    padding:4px 6px;
+    text-align:center;
+    width:fit-content;
+    margin:0 auto;
+    display:block;
+}
+#submit:hover{
+    cursor:pointer;
+}
+
