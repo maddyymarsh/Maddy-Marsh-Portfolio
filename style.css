@@ -24,7 +24,12 @@ ul{
     list-style-type:none;
 }
 a{
-    text-decoration: none;
+    text-decoration:none;
+    color:white;
+     font-family: "oswald", sans-serif;
+font-weight: 400;
+font-style: normal;
+letter-spacing:0px;
 }
 a:visited{
     color:white;
@@ -32,20 +37,24 @@ a:visited{
 h1{
     color:white;
     text-align:center;
-     font-family: "oswald", sans-serif;
-font-weight: 500;
-font-style: normal;
-letter-spacing:0px;
-font-size:2em;
+    font-family: "oswald", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing:0px;
+    font-size:2em;
+    margin-bottom:1em;
 }
 h2{
     color:white;
-    text-align:center;
      font-family: "oswald", sans-serif;
 font-weight: 500;
 font-style: normal;
 letter-spacing:0px;
 font-size:1.5em;
+}
+i{
+     color:hsl(281, 33%, 20%); 
+     font-size:1.1em;
 }
 
 /* NAV */
@@ -182,7 +191,7 @@ video {
 footer{
     background-color:#3A363C;
     height:auto;
-    margin:0;
+    margin-top:1em;
     padding:1em 1.5em;
 }
 .footerText{
@@ -192,7 +201,6 @@ footer{
     font-family: "oswald", sans-serif;
 font-weight: 400;
 font-style: normal;
-letter-spacing: 1px;
 
 }
 .contactButton{
@@ -220,10 +228,31 @@ footer button{
     float:left;
 }
 
+
+
 /*CONTACT PAGE*/
 #contactPage{
    padding-top:8em;
 }
+
+.contactGridContainer{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:1em;
+    margin-bottom:15.5em;
+    place-items:center;
+}
+.contactGridCol {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .contactGridContainer {
+    grid-template-columns: 1fr;
+  }
+}
+
 
 /* CONTACT FORM*/
 form{
@@ -236,7 +265,6 @@ form{
     width:fit-content;
     height:fit-content;
     padding:1em;
-    margin:1em;
 }
 
 .contactFormName{
@@ -245,7 +273,9 @@ form{
 
 input{
     border-radius:5px;
-    border: 1px solid rgba(255, 255, 255, 0.3); 
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding:5px;
+    color:hsl(281, 33%, 20%); 
 }
 #name{
     color:white;
@@ -253,6 +283,7 @@ input{
 font-weight: 400;
 font-style: normal;
 letter-spacing:0px;
+ color:hsl(281, 33%, 20%); 
 
 }
 
@@ -262,6 +293,7 @@ letter-spacing:0px;
 font-weight: 400;
 font-style: normal;
 letter-spacing:0px;
+ color:hsl(281, 33%, 20%); 
 }
 
 #message{
@@ -271,6 +303,7 @@ font-weight: 400;
 font-style: normal;
 letter-spacing:0px;
 margin-right:2px;
+ color:hsl(281, 33%, 20%); 
 }
 .contactFormMessage{
     display:flex;
@@ -279,6 +312,7 @@ margin-right:2px;
 textarea{
     border-radius: 6px;
      border: 1px solid rgba(255, 255, 255, 0.3); 
+     padding:5px;
 }
 #submit{
     color:white;
