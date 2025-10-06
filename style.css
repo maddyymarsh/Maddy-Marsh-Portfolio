@@ -35,6 +35,13 @@ letter-spacing:0px;
 a:visited{
     color:white;
 }
+p{
+    color:white;
+     font-family: "poppins", sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size:0.9em;
+}
 h1{
     color:white;
     text-align:center;
@@ -43,7 +50,6 @@ h1{
     font-style: normal;
     letter-spacing:0px;
     font-size:2em;
-    margin-bottom:1em;
 }
 h2{
     color:white;
@@ -52,6 +58,22 @@ font-weight: 500;
 font-style: normal;
 letter-spacing:0px;
 font-size:1.5em;
+}
+h3{
+    color:white;
+    font-family: "oswald", sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size:1em;
+text-align:center;
+}
+h4{
+     color:white;
+    font-family: "oswald", sans-serif;
+font-weight: 300;
+font-style: normal;
+font-size:0.8em;
+text-align:center;
 }
 i{
      color:hsl(281, 33%, 20%); 
@@ -342,3 +364,57 @@ textarea{
     cursor:pointer;
 }
 
+/* ABOUT PAGE*/
+
+/*PROJECTS PAGES*/
+.projectPages{
+    padding-top:7em;
+}
+.projectContainer{
+    display:grid;
+    gap:1em;
+    width:65%;
+    margin:auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:max-content;
+    margin-bottom:1em;
+}
+.projectContainer img{
+    max-width:100%;
+    object-fit:cover;
+    border-radius:20px;
+    transition:transform 0.25s ease;
+}
+.projectContainer img:hover{
+    -webkit-transform:scale(1.5);
+    transform:scale(1.5);
+}
+
+.projectSteps{
+    color:hsl(281, 33%, 20%); 
+    grid-column:span 2;
+    text-align:center;
+    margin:1em auto 0.5em auto;
+}
+
+.projectProcessContainer{
+    display:grid;
+    gap:1em;
+    width:65%;
+    margin:auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:max-content;
+}
+.projectProcessContainer img{
+    max-width:100%;
+    max-height:80%;
+    object-fit:cover;
+    border-radius:20px;
+    justify-self:end;
+
+}
+
+/*LUCHA LIBRE*/
+#llPoster{
+    grid-row: span 2;
+}
