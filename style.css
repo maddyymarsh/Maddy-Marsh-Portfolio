@@ -7,14 +7,7 @@
 body{
     margin:0px;
     padding:0px;
-    background-color:hsla(0,0%,93%,1);
-background-image:
-radial-gradient(at 0% 0%, hsla(274,13%,63%,1) 0px, transparent 50%),
-radial-gradient(at 79% 15%, hsla(266,18%,54%,1) 0px, transparent 50%),
-radial-gradient(at 47% 68%, hsla(256,15%,42%,0.64) 0px, transparent 50%),
-radial-gradient(at 83% 36%, hsla(337,6%,85%,1) 0px, transparent 50%),
-radial-gradient(at 78% 69%, hsla(0,0%,26%,0.68) 0px, transparent 50%),
-radial-gradient(at 0% 100%, hsla(355,0%,38%,1) 0px, transparent 50%);
+    background-color:#d7d7d7;
 background-position: center;
 background-repeat: no-repeat;
 background-size:cover;
@@ -26,24 +19,24 @@ ul{
 }
 a{
     text-decoration:none;
-    color:white;
+    color:hsl(281, 33%, 20%);
      font-family: "oswald", sans-serif;
 font-weight: 400;
 font-style: normal;
 letter-spacing:0px;
 }
 a:visited{
-    color:white;
+    color:inherit;
 }
 p{
-    color:white;
+     color:hsl(281, 33%, 20%);
      font-family: "poppins", sans-serif;
 font-weight: 400;
 font-style: normal;
 font-size:0.9em;
 }
 h1{
-    color:white;
+    color:hsl(281, 33%, 20%);
     text-align:center;
     font-family: "oswald", sans-serif;
     font-weight: 500;
@@ -52,7 +45,7 @@ h1{
     font-size:2em;
 }
 h2{
-    color:white;
+    color:hsl(281, 33%, 20%);
      font-family: "oswald", sans-serif;
 font-weight: 500;
 font-style: normal;
@@ -60,7 +53,7 @@ letter-spacing:0px;
 font-size:1.5em;
 }
 h3{
-    color:white;
+    color:hsl(281, 33%, 20%);
     font-family: "oswald", sans-serif;
 font-weight: 400;
 font-style: normal;
@@ -68,7 +61,7 @@ font-size:1em;
 text-align:center;
 }
 h4{
-     color:white;
+     color:hsl(281, 33%, 20%);
     font-family: "oswald", sans-serif;
 font-weight: 300;
 font-style: normal;
@@ -76,8 +69,29 @@ font-size:0.8em;
 text-align:center;
 }
 i{
-     color:hsl(281, 33%, 20%); 
+      color:hsl(281, 33%, 20%);
      font-size:1.1em;
+     margin-right:0.2em;
+}
+button{
+    color:hsl(281, 33%, 20%);
+    background-color:rgb(254, 254, 254);
+     border-radius: 20px;
+    border: 1px solid rgba(229, 228, 228, 0.8); 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+    padding:6px 12px;
+    margin:5px;
+}
+button:active{
+    background-color:rgb(248, 240, 255);
+}
+button:hover{
+    transform: scale(1.09);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+.contactButton{
+font-weight:500;
+font-size:1em;
 }
 
 /* NAV */
@@ -110,6 +124,7 @@ nav{
     flex-direction: row-reverse;
     float:right;
     font-family: "oswald", sans-serif;
+     color:hsl(281, 33%, 20%);
 font-weight: 400;
 font-style: normal;
 letter-spacing: 1px;
@@ -124,7 +139,7 @@ letter-spacing: 1px;
 }
 
 nav a {
-    color: white;
+    color:hsl(281, 33%, 20%);
     text-decoration: none;
     padding: 10px 15px;
     border-radius: 20px;
@@ -139,7 +154,7 @@ nav a:hover {
 /*HERO SECTION*/
 .heroContainer{
     width:100vw;
-    height:100vh;
+    height:80vh;
     z-index:1;
 }
 
@@ -148,7 +163,7 @@ video {
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
     object-fit: cover;
     z-index: -1;
 }
@@ -158,36 +173,16 @@ video {
 
 /*BUTTON TAGS*/
 .filter{
-    padding:4px 10px;
+    padding:6px 12px;
     margin:5px;
-    font-size: small;
-    border-radius:11px;
-    color:white;
-    border: 1px solid rgba(255, 255, 255, 0.3); 
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); 
+    font-size: 0.8em;
      font-family: "oswald", sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     font-style: normal;
 }
 .buttonContainer{
     display:flex;
     justify-content: center;
-}
-
-#webButton{
-    background-color:#9863b7;
-}
-#smButton{
-    background-color:#864394;
-}
-#brandButton{
-    background-color:#7f3b76;
-}
-#edButton{
-    background-color:#65334D;
-}
-#vecButton{
-    background-color:#492231;
 }
 
 
@@ -209,18 +204,19 @@ video {
     max-width:100%;
     max-height:100%; 
     border-radius:20px;
+     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
+}
+.workImgs:hover{
+     transform: scale(1.05);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
 }
 
 /*FOOTER*/
 footer{
-    background-color:#3A363C;
+    background-color:hsl(281, 33%, 20%);
     padding:1em 1.5em;
     margin-top:auto;
-    margin:0;
-}
-.footerContainer{
-    margin-top:auto;
-    display: flex;
+    margin-bottom:0;
 }
 .footerText{
     color:white;
@@ -230,20 +226,7 @@ footer{
 font-weight: 400;
 font-style: normal;
 }
-.contactButton{
-    padding:4px 6px;
-    margin-top:5px;
-    font-size: medium;
-    border-radius:11px;
-    color:white;
-    border: 1px solid rgba(255, 255, 255, 0.3); 
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); 
-    background-color:hsl(281, 33%, 20%);
-    font-family: "oswald", sans-serif;
-font-weight: 500;
-font-style: normal;
-letter-spacing: 1px;
-}
+
 .footerContainer{
     display:block;
 }
@@ -363,6 +346,12 @@ textarea{
 #submit:hover{
     cursor:pointer;
 }
+.contactInfoContainer{
+line-height: 1.5em;
+}
+.contactInfoContainer a:hover{
+    text-decoration: underline;
+}
 
 /* ABOUT PAGE*/
 
@@ -386,24 +375,29 @@ textarea{
     transition:transform 0.25s ease;
 }
 .projectContainer img:hover{
-    -webkit-transform:scale(1.5);
-    transform:scale(1.5);
+     transform: scale(1.05);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.projectInformation{
+    margin-bottom:1em;
 }
 
 .projectSteps{
     color:hsl(281, 33%, 20%); 
     grid-column:span 2;
     text-align:center;
-    margin:1em auto 0.5em auto;
+    margin:0.5em auto 0.5em auto;
 }
 
 .projectProcessContainer{
     display:grid;
-    gap:1em;
+    gap:0.5em;
     width:65%;
     margin:auto;
+    margin-bottom:1em;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows:max-content;
+    grid-template-rows:min-content;
 }
 .projectProcessContainer img{
     max-width:100%;
@@ -411,7 +405,12 @@ textarea{
     object-fit:cover;
     border-radius:20px;
     justify-self:end;
-
+}
+.projectEmbed{
+    width:100%;
+    height:auto;
+    grid-column: span 2;
+    justify-self:center;
 }
 
 /*LUCHA LIBRE*/
