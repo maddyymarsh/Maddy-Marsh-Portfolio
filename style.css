@@ -93,17 +93,22 @@ button:hover{
 font-weight:500;
 font-size:1em;
 }
+.contactButton:hover{
+    background-color:rgb(248, 240, 255);
+}
 
 /* NAV */
 nav{
     display:block;
-    margin:20px auto;
     z-index:5;
     position:fixed;
     justify-content: space-around;
     width: 90vw;
     height:auto;
     padding: 5px 10px;
+    top:20px;
+    left:50%;
+    transform:translate(-50%);
 
     /* Glassmorphism Core Properties */
     background: rgba(255, 255, 255, 0.2); 
@@ -115,10 +120,7 @@ nav{
 
     transition: 0.3s; 
 }
-.navbar{
-   width:90vw;
-   margin:20px auto;
-}
+
 .navItems{
     display:flex;
     flex-direction: row-reverse;
@@ -412,8 +414,26 @@ line-height: 1.5em;
     grid-column: span 2;
     justify-self:center;
 }
+.projectSingleImg{
+     grid-column: span 2;
+    width:50%;
+    justify-self:center;
+}
 
 /*LUCHA LIBRE*/
 #llPoster{
     grid-row: span 2;
+}
+
+/*BHG*/
+#bhgEd{
+    grid-column: span 2;
+    max-width:50%;
+    justify-self:center;
+}
+/*RS*/
+#rsEd{
+     grid-column: span 2;
+    max-width:50%;
+    justify-self:center;
 }
