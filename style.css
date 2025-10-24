@@ -240,15 +240,10 @@ footer button{
 
 /*CONTACT PAGE*/
 #contactPage {
-  min-height: calc(100vh - 133px);
-  display: flex;
-  flex-direction: column;
+  height: 79vh;
   padding-top: 8em;    
 }
 
-#contactPage footer{
-    margin-top: calc(100vh - 650.5px)
-}
 
 .contactGridContainer{
     display:grid;
@@ -360,18 +355,23 @@ line-height: 1.5em;
 /*PROJECTS PAGES*/
 .projectPages{
     padding-top:7em;
+    min-height:81vh;
 }
 .projectContainer{
     display:grid;
     gap:1em;
     width:65%;
+    height:min-content;
     margin:auto;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows:max-content;
+    grid-template-rows:auto;
     margin-bottom:1em;
+    align-content: start;
 }
+
 .projectContainer img{
     max-width:100%;
+    display:block;
     object-fit:cover;
     border-radius:20px;
     transition:transform 0.25s ease;
@@ -394,22 +394,26 @@ line-height: 1.5em;
 
 .projectProcessContainer{
     display:grid;
-    gap:0.5em;
+    grid-template-columns: 1fr 1fr;
     width:65%;
     margin:auto;
     margin-bottom:1em;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows:min-content;
+}
+.processBlock{
+  gap: 1em;
+  margin:2em;
+}
+.processBlock img{
+    margin-top:1em;
 }
 .projectProcessContainer img{
     max-width:100%;
-    max-height:80%;
     object-fit:cover;
     border-radius:20px;
     justify-self:end;
 }
 .projectEmbed{
-    width:100%;
+   width:100%;
     height:auto;
     grid-column: span 2;
     justify-self:center;
@@ -418,6 +422,10 @@ line-height: 1.5em;
      grid-column: span 2;
     width:50%;
     justify-self:center;
+}
+.soloPara{
+    max-width:60%;
+    margin: 1em auto;
 }
 
 /*LUCHA LIBRE*/
