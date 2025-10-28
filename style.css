@@ -236,7 +236,71 @@ footer button{
     float:left;
 }
 
+/* ABOUT PAGE*/
+.aboutPage{
+    padding-top:8em;
+}
+.aboutGrid{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto;
+    gap:1em;
+    width:70%;
+    margin:0 auto;
 
+    grid-template-areas:
+    "photo summary summary"
+    "experience experience skills"
+    "qa qa qa";
+}
+.box{
+    background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  padding: 1.5rem;
+  color: white;
+}
+.aboutImg{
+     width:100%;
+     height:100%;
+     object-fit:cover;
+     border-radius:16px;
+}
+.photo{
+    grid-area:photo;
+}
+.summary{
+    grid-area:summary;
+}
+
+/*  work expereince */
+.experience{
+    grid-area:experience;
+}
+.workDates{
+    float:right;
+}
+.workDescription{
+    font-size:small;
+    color:hsl(281, 27%, 29%);
+}
+.aboutBullets{
+    list-style-type: disc;
+}
+.aboutBullets li::marker{
+    color:hsl(281, 27%, 29%);
+}
+
+.achievements{
+    grid-area:achievements;
+}
+
+.skills{
+    grid-area: skills;
+}
+.qa{
+    grid-area:qa;
+}
 
 /*CONTACT PAGE*/
 #contactPage {
@@ -350,7 +414,6 @@ line-height: 1.5em;
     text-decoration: underline;
 }
 
-/* ABOUT PAGE*/
 
 /*PROJECTS PAGES*/
 .projectPages{
