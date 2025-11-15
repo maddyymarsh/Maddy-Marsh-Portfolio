@@ -99,17 +99,16 @@ font-size:1em;
 
 /* NAV */
 nav{
-    display:block;
+    display:flex;
     z-index:5;
-    position:fixed;
+    position:sticky;
     justify-content: space-around;
-    width: 90vw;
-    height:auto;
+    width: 90%;
+    height:fit-content;
     padding: 5px 10px;
-    top:20px;
-    left:50%;
-    transform:translate(-50%);
-
+    margin:1em auto auto auto;
+    top:1em;
+    
     /* Glassmorphism Core Properties */
     background: rgba(255, 255, 255, 0.2); 
     backdrop-filter: blur(5px);
@@ -120,11 +119,15 @@ nav{
 
     transition: 0.3s; 
 }
-
+ nav ul{
+    display:flex;
+    align-items:center;
+    width:100%;
+ }
 .navItems{
     display:flex;
-    flex-direction: row-reverse;
-    float:right;
+    flex-direction:row-reverse;
+    align-items:center;
     font-family: "oswald", sans-serif;
      color:hsl(281, 33%, 20%);
 font-weight: 400;
@@ -132,12 +135,12 @@ font-style: normal;
 letter-spacing: 1px;
 }
 #leftNavItem{
-    float:left;
+    margin-right:auto;
     font-weight:500;
     letter-spacing: 0.5px;
 }
 #maddyMarsh{
-    font-size:1.1em;
+    font-size:1.2rem;
 }
 
 nav a {
@@ -415,7 +418,93 @@ line-height: 1.5em;
 }
 
 
+/*SIDEBAR NAV*/
+.sidebar{
+    box-sizing: border-box;
+    height:100vh;
+    border-right: 1px solid #ffffff;
+    padding:1rem;
+
+    position:sticky;
+    top:0;
+    align-self:start;
+}
+.sidebarContainer{
+    padding-top:5rem;
+    height:100vh;
+}
+.sidebar ul{
+     color:hsl(281, 33%, 20%); 
+     line-height: 1.5rem;
+}
+.sidebar ul li.active a{
+     color:hsl(279, 19%, 53%); 
+}
+.sidebarLink a:hover{
+    text-decoration: underline;
+}
+
+#sidebar{
+    position: relative;
+    transition: 0.3s ease-in-out;
+  width:25vw;
+  overflow: hidden;
+  text-wrap:none;
+  white-space: nowrap;
+}
+.verticalText span{
+    display: inline-block;
+    writing-mode:horizontal-tb;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease, writing-mode 0.3s ease;
+    margin-bottom: 1rem;
+    font-size:1.2rem;
+}
+
+/*  SIDEBAR CLOSED*/
+#sidebar.close{
+    width:2em;
+}
+#sidebar.close ul{
+    opacity:0;
+    pointer-events:none;
+}
+#sidebar.close .verticalText span{
+    writing-mode:vertical-rl;
+}
+#sidebarBttn.rotate {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+#sidebarBttn {
+  position: absolute;
+  top:50%;
+  right: 0.1rem; 
+  margin-left:auto;          
+  background: none;
+  border: none;
+  font-size:1rem;
+
+  padding: 0;
+  cursor: pointer;
+  z-index: 10;
+  transition: transform 0.3s ease; 
+}
+
+
+
+
 /*PROJECTS PAGES*/
+.projectPagesGridContainer{
+    display:grid;
+    grid-template-columns: auto 1fr;
+}
+
+.rightProjectPage{
+    position:relative;
+    top:0;
+    
+}
 .projectPages{
     padding-top:7em;
     min-height:81vh;
@@ -477,9 +566,15 @@ line-height: 1.5em;
 }
 .projectEmbed{
    width:100%;
-    height:auto;
+    height:80vh;
     grid-column: span 2;
     justify-self:center;
+}
+.projectEmbedWeb{
+    grid-column: span 2;
+    justify-self:center;
+    width:100%;
+    height:60vh;
 }
 .projectSingleImg{
      grid-column: span 2;

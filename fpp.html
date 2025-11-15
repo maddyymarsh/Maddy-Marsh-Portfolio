@@ -15,7 +15,30 @@
 </head>
 
 <body>
-     <div class="navbar">
+    <div class="projectPagesGridContainer">
+    <div class="leftProjectPage">
+        <aside aria-label="sidebar navigation to other project pages" class="sidebar">
+            <div class="sidebarContainer close" id="sidebar">
+                <h3 class="verticalText"><span>All Projects</span></h3>
+            <ul>
+                <li class="sidebarLink active"><a href="fpp.html"><span>Friends of the Plymouth Pound</span></a> </li>
+                <li class="sidebarLink"><a href="greenhaus.html"><span>Green Haus</span></a> </li>
+                <li class="sidebarLink"><a href="luchalibre.html"><span>Lucha Libre</span></a> </li>
+                <li class="sidebarLink"><a href="mileymagenta.html"><span>Miley Magenta</span></a> </li>
+                <li class="sidebarLink"><a href="misfits.html"><span>Misfits</span></a> </li>
+                <li class="sidebarLink"><a href="nn.html"><span>Noire et Neige</span></a> </li>
+                <li class="sidebarLink"><a href="ppm.html"><span>Plimoth Patuxet Museums</span></a> </li>
+                <li class="sidebarLink"><a href="rs.html"><span>Rolling Stone Magazine</span></a> </li>
+                <li class="sidebarLink"><a href="sisyphus.html"><span>The Myth of Sisyphus</span></a> </li>
+                <li class="sidebarLink"><a href="wedding.html"><span>Wedding in Paros</span></a> </li>
+                <li class="sidebarLink" ><a href="wrailers.html"><span>Worcester Railers</span></a></li>
+            </ul>
+            <button id="sidebarBttn"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </aside>
+    </div>
+
+    <div class="rightProjectPage">
     <nav aria-label="Primary Navigation">
         <ul>
             <li class="navItems" id="leftNavItem"><a id="maddyMarsh" href="index.html"> Maddy Marsh</a></li>
@@ -24,8 +47,8 @@
             <li class="navItems"><a href="index.html#work">Work</a></li>
         </ul>
     </nav>
-    </div>
 
+    <main>
      <div class="projectPages">
     <section aria-label="mockups of project">
         <div class="projectContainer">
@@ -43,10 +66,11 @@
 
     <section aria-label="Description and images of the design process">
         
-         <iframe class="projectEmbed" allowfullscreen="allowfullscreen" allow="clipboard-write" scrolling="yes" class="fp-iframe"
-            src="https://maddyymarsh.github.io/Friends-of-the-Plymouth-Pound/" style="border: 0px; width: 100%; height: 400px;"></iframe>
+        
 
         <div class="projectProcessContainer">
+             <iframe class="projectEmbedWeb" allowfullscreen="allowfullscreen" allow="clipboard-write" scrolling="yes"
+            src="https://maddyymarsh.github.io/Friends-of-the-Plymouth-Pound/"></iframe>
 
             <div class="processBlock">
                 <h2 class="projectSteps">Research</h2>
@@ -69,6 +93,9 @@
         </div>
     </section>
 
+</main>
+    </div>
+    </div>
 
      <section aria-label="footer">
         <footer>
@@ -83,6 +110,16 @@
         </footer>
     </section>
     </div>
+
+    <script>
+    const sidebar = document.getElementById('sidebar');
+    const sidebarBttn = document.getElementById('sidebarBttn');
+
+    sidebarBttn.addEventListener('click', () => {
+      sidebar.classList.toggle('close');
+      sidebarBttn.classList.toggle('rotate');
+    });
+  </script>
 
 </body>
 </html>
