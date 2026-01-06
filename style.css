@@ -182,7 +182,22 @@ video {
     transition: height 0.6s ease, width 0.6s ease;
 }
 
+/*ALERT*/
+.alert{
+    padding:1em;
+    width:32%;
+    margin:auto;
+     background-color:hsl(280, 8%, 78%); 
+     border-radius: 24px;
+}
+.alertCloseBtn{
+    float:right;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s ease;
 
+}
 
 /*BUTTON TAGS*/
 .filter{
@@ -262,7 +277,6 @@ footer button{
     grid-template-areas:
     "photo summary summary"
     "experience experience skills"
-    "qa qa qa";
 }
 .box{
     background-color: rgba(255, 255, 255, 0.1);
@@ -437,7 +451,7 @@ line-height: 1.5em;
     top:0;
     align-self:start;
 
-    background-color:hsl(280, 8%, 78%); ;
+    background-color:hsl(280, 8%, 78%); 
 }
 .sidebarContainer{
     padding-top:5rem;
@@ -630,8 +644,23 @@ line-height: 1.5em;
 
 @media (max-width: 750px) {
     .gridContainer{
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         align-items:start;
     }
 
+}
+
+@media (max-width:750px){
+    .aboutGrid{
+         grid-template-areas:
+    "photo photo skills"
+    "experience experience experience"
+    "summary summary summary"
+    }
+}
+
+@media(max-width: 750px){
+.projectProcessContainer{
+    grid-template-columns: 1fr;
+}
 }
