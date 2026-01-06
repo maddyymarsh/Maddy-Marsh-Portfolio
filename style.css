@@ -664,3 +664,24 @@ line-height: 1.5em;
     grid-template-columns: 1fr;
 }
 }
+
+@media(max-width: 500px){
+    nav{
+        left:1em;
+        right:1em;
+    }
+    .aboutGrid{
+         grid-template-areas:
+    "photo photo photo"
+    "skills skills skills"
+    "experience experience experience"
+    "summary summary summary"
+}
+    #contactPage{
+        height:100vh;
+    }
+    form{
+        width:50vw;
+    }
+
+}
