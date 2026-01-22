@@ -441,81 +441,74 @@ line-height: 1.5em;
 
 
 /*SIDEBAR NAV*/
-.sidebar{
-    box-sizing: border-box;
-    height:100vh;
-    border-right: 1px solid #ffffff;
-    padding:1rem;
 
-    position:sticky;
-    top:0;
-    align-self:start;
-
-    background-color:hsl(280, 8%, 78%); 
-}
 .sidebarContainer{
-    padding-top:5rem;
-    height:100vh;
+    padding:2rem 2rem 1rem 2rem;
+    background-color:hsl(280, 8%, 78%); 
+    border-radius: 24px 24px 0 0;
+    width:fit-content;
 }
 .sidebar ul{
      color:hsl(281, 33%, 20%); 
      line-height: 1.5rem;
+
 }
-.sidebar ul li.active a{
-     color:hsl(279, 19%, 53%); 
+.sidebarLink ul li.active a{
+     color:white; 
 }
 .sidebarLink a:hover{
     text-decoration: underline;
 }
 
 #sidebar{
-    position: relative;
     transition: 0.3s ease-in-out;
-  width:25vw;
   overflow: hidden;
   text-wrap:none;
   white-space: nowrap;
+  margin-left:4rem;
 }
-.verticalText span{
-    display: inline-block;
-    writing-mode:horizontal-tb;
-    transform: rotate(0deg);
-    transition: transform 0.3s ease, writing-mode 0.3s ease;
-    margin-bottom: 1rem;
-    font-size:1.2rem;
-}
+
 
 /*  SIDEBAR CLOSED*/
 #sidebar.close{
-    width:2em;
+    background-color: transparent;
 }
 #sidebar.close ul{
     opacity:0;
     pointer-events:none;
 }
-#sidebar.close .verticalText span{
-    writing-mode:vertical-rl;
-}
-#sidebarBttn.rotate {
-    transform: translateY(-50%) rotate(180deg);
-}
 
 #sidebarBttn {
-  position: absolute;
-  top:50%;
-  right: 0.1rem; 
   margin-left:auto;          
   background: none;
   background-color: none;
   border: none;
-  font-size:1rem;
+  font-size:1.2rem;
   text-decoration: none;
   box-shadow:none;
 
   padding: 0;
   cursor: pointer;
   z-index: 10;
-  transition: transform 0.3s ease; 
+  
+}
+
+/*NEXTPREV*/
+.nextPrevNav{
+     background-color:hsl(280, 8%, 78%); 
+}
+.nextPrevNav i, h2{
+    font-size:2rem;
+    text-align: center;
+}
+.nextPrevNav i{
+    top:50%;
+}
+.previous{
+    display:flex;
+}
+.next{
+    display:flex;
 }
 
 
