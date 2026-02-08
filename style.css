@@ -311,6 +311,7 @@ footer button{
 }
 .aboutBullets{
     list-style-type: disc;
+
 }
 .aboutBullets li::marker{
     color:hsl(281, 27%, 29%);
