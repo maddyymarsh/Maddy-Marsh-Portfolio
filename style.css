@@ -441,9 +441,15 @@ line-height: 1.5em;
 
 
 /*SIDEBAR NAV*/
-
+aside{
+    position:relative;
+     background-color:hsl(280, 8%, 78%); 
+}
+.asideContainer{
+    background-color:hsl(280, 8%, 78%); 
+}
 .sidebarContainer{
-    padding:2rem 2rem 1rem 2rem;
+    padding:2rem 2rem 2rem 2rem;
     background-color:hsl(280, 8%, 78%); 
     border-radius: 24px 24px 0 0;
     width:fit-content;
@@ -453,25 +459,33 @@ line-height: 1.5em;
      line-height: 1.5rem;
 
 }
-.sidebarLink ul li.active a{
-     color:white; 
+
+.active{
+  color:rgb(122, 94, 130); 
 }
 .sidebarLink a:hover{
     text-decoration: underline;
 }
 
 #sidebar{
+    position: absolute;
+    left:0;
+    z-index:9;
+    bottom:6.5rem;
+
     transition: 0.3s ease-in-out;
+
   overflow: hidden;
   text-wrap:none;
   white-space: nowrap;
-  margin-left:4rem;
+  height:fit-content;
 }
 
 
 /*  SIDEBAR CLOSED*/
 #sidebar.close{
-    background-color: transparent;
+    opacity:0;
+     pointer-events:none;
 }
 #sidebar.close ul{
     opacity:0;
@@ -479,7 +493,9 @@ line-height: 1.5em;
 }
 
 #sidebarBttn {
-  margin-left:auto;          
+  margin:0 0 2rem 2rem;
+  position:absolute;  
+
   background: none;
   background-color: none;
   border: none;
@@ -487,7 +503,11 @@ line-height: 1.5em;
   text-decoration: none;
   box-shadow:none;
 
-  padding: 0;
+  display: flex; 
+  align-items: center;    
+
+  transform: translateY(35%);
+  padding:0;
   cursor: pointer;
   z-index: 10;
   
@@ -496,20 +516,26 @@ line-height: 1.5em;
 /*NEXTPREV*/
 .nextPrevNav{
      background-color:hsl(280, 8%, 78%); 
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin:3rem 1rem auto 1rem;
+     padding-top:2rem;
 }
 .nextPrevNav i, h2{
     font-size:2rem;
-    text-align: center;
 }
-.nextPrevNav i{
-    top:50%;
+.prevBttn, .nextBttn{
+    background:none;
+    margin:2em;
 }
-.previous{
-    display:flex;
+
+.prevBttn a, .nextBttn a{
+     display:flex;
+    align-items: center;
 }
-.next{
-    display:flex;
-}
+
+
 
 
 
