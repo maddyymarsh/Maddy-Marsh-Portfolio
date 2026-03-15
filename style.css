@@ -719,6 +719,11 @@ aside{
     width:100%;
 }
 
+#upkeepVideo{
+    max-width:100%;
+    display:block;
+    position:relative;
+}
 /*LUCHA LIBRE*/
 #llPoster{
     grid-row: span 2;
