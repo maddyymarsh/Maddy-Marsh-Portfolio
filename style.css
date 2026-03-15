@@ -97,6 +97,9 @@ font-size:1em;
 .contactButton:hover{
     background-color:rgb(248, 240, 255);
 }
+.iframeOptimize{
+    margin: 0;
+}
 
 /* NAV */
 nav{
@@ -711,6 +714,7 @@ aside{
     height:auto;
     object-fit: cover;
 }
+
 
 #WRGameday{
     width:55%;
