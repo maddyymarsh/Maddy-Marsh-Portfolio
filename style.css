@@ -51,6 +51,7 @@ font-weight: 500;
 font-style: normal;
 letter-spacing:0px;
 font-size:1.5em;
+text-align: center;
 }
 h3{
     color:hsl(281, 33%, 20%);
@@ -169,6 +170,7 @@ nav a:hover {
     width: 100%;
     height: 100%;
     object-fit: cover;
+
 }
 
 
@@ -180,8 +182,40 @@ video {
     height: 100%;
     object-fit: cover;
     transition: height 0.6s ease, width 0.6s ease;
+    z-index:5;
 }
 
+.heroImg{
+    width: 100vw;
+    height:70vh;
+}
+.gradient-bg {
+    position: absolute;
+    inset: 0;
+    z-index:0;
+
+    will-change: transform;
+
+    --x: 50%;
+    --y: 50%;
+
+    background:
+      radial-gradient(circle at var(--x) var(--y),
+        rgba(238, 226, 247, 0.5),
+        transparent 50%
+      ),
+      radial-gradient(circle at 90% 70%,
+        rgba(168, 140, 189, 0.5),
+        transparent 50%
+      ),
+      radial-gradient(circle at 20% 70%,
+        rgba(133, 117, 138, 0.5),
+        transparent 50%
+      );
+  }
+  .gradient-bg {
+  animation: float 15s ease infinite;
+}
 /*ALERT*/
 .alert{
     padding:1em;
@@ -523,18 +557,22 @@ aside{
      margin:3rem 1rem auto 1rem;
      padding-top:2rem;
 }
-.nextPrevNav i, h2{
-    font-size:2rem;
-}
+
 .prevBttn, .nextBttn{
     background:none;
-    margin:2em;
+    margin:1em;
+    font-size: 1.5em;
+    vertical-align: middle;
+}
+.prevBttn{
+    padding-right:1.5rem;
+}
+.nextBttn{
+    padding-left:1.5rem;
 }
 
-.prevBttn a, .nextBttn a{
-     display:flex;
-    align-items: center;
-}
+
+
 
 
 
@@ -631,6 +669,54 @@ aside{
 .soloPara{
     max-width:60%;
     margin: 1em auto;
+}
+
+
+/*CASE STUDIES*/
+.caseStudyImgContainer{
+    display:flex;
+    gap:1em;
+   justify-content: center;
+   overflow-x: scroll;
+   margin-bottom:5em;
+}
+.caseStudyImgContainer img{
+    height:35%;
+    width:auto;
+    object-fit: cover;
+}
+
+.caseStudyImgContainerWR{
+    display:flex;
+    gap:2em;
+   justify-content: center;
+   overflow-x: none;
+   margin-bottom:5em;
+   
+}
+.caseStudyImgContainerWR img{
+    width:30%;
+    height:auto;
+    object-fit: hidden;
+}
+.caseStudyImgContainerSolo{
+    display:flex;
+    gap:1em;
+   justify-content: left;
+   overflow-x: scroll;
+   margin-bottom:5em;
+}
+.caseStudyImgContainerSolo img{
+    width:80%;
+    height:auto;
+    object-fit: cover;
+}
+
+#WRGameday{
+    width:55%;
+}
+#ecoHighlightMock{
+    width:100%;
 }
 
 /*LUCHA LIBRE*/
