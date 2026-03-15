@@ -681,8 +681,8 @@ aside{
    margin-bottom:5em;
 }
 .caseStudyImgContainer img{
-    height:35%;
-    width:auto;
+    width:35%;
+    height:auto;
     object-fit: cover;
 }
 
